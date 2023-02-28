@@ -1,0 +1,27 @@
+body{
+    background-color: azure;
+}
+h1{
+    background-color: aqua;
+    color: black;
+    font-weight: bold;
+    text-align: center;
+    font-family: 'Courier New', Courier, monospace;
+}
+h2{ background-color: antiquewhite;
+
+}
+h3{background-color: azure;
+
+}
+.basico{
+    background-color: black;
+    color: aliceblue;
+}
+.intermediario{
+    background-color: rgb(25, 100, 100);
+}
+.avancado{
+    background-color: rgb(119, 119, 223);
+    color: blanchedalmond;
+}

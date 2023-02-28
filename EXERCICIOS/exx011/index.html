@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Midias em HTML</title>
+</head>
+<body>
+    <H1>Imagens que se adptam</H1>
+    <p> as imagens se adaptam aos diferentes dispositivos e tamanhos</p>
+    <picture>
+        <source media="(max-width:700px )" srcset="foto-p.png" type="image/png">
+        <source media="(max-width:1050px)" srcset="foto-m.png" type="image/png">
+        <img src="foto-g.png" alt="Foto do arquivo tamanho Grande">
+    </picture>
+
+    <h2>Audio</h2>
+    <audio src="guanacast-33.mp3" controls autoplay></audio>
+
+
+</body>
+</html>
