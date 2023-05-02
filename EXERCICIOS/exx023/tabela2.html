@@ -12,10 +12,16 @@
         table{
             width: 500px;
             border-collapse: collapse;
+            position: relative;
 
         }
+        thead > tr > th{
+            position: sticky;
+            top: 0;
+            background-color:rgb(49, 49, 49) ;
+        }
         thead,tfoot{
-            background-color: rgb(92, 92, 92);
+            background-color: rgb(49, 49, 49);
             color: aliceblue;
         }
         td,th{
@@ -26,12 +32,16 @@
         td.num{
             text-align: right;
         }
+        tbody>tr:nth-child(2n){
+            background-color: rgb(182, 181, 181);
+        }
     </style>
 </head>
 <body>
     <h1>Tabelas grandes</h1>
     <!-- ANATOMIA PARA TABELAS GRANDES
     TABLE
+            CAPTION legenda
             THEAD cabeca-cabeçalho
                 TR,TD,TH
             TBODY corpo
@@ -42,8 +52,8 @@
 <table>
 <thead>
     <tr>
-        <th>Estado</th>
-        <th>População</th>
+        <th scope="col">Estado</th>
+        <th scope="col" style="width: 50px;">População</th>
     </tr>
 </thead>
 <tbody>
@@ -161,12 +171,19 @@
 </tbody>
 <tfoot>
     <tr>
-        <th>Total de habitantes</th>
+        <th scope="row">Total de habitantes</th>
         <td class="num"><strong>210.147.125</strong></td>
     </tr>
 
 </tfoot>
 </table>
+<p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ducimus, dolore. Cumque, dolores! Assumenda dicta cumque explicabo eligendi debitis officia molestiae accusantium dignissimos enim voluptatum at illo fugiat reprehenderit, incidunt consequatur?Lorem ipsum dolor sit, amet consectetur adipisicing elit. Natus accusamus laborum corrupti et quia porro laboriosam beatae voluptatibus sit quas, earum accusantium, eligendi doloremque, vel mollitia velit dolore molestiae itaque.lorem Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus enim dignissimos cumque, et quidem error doloribus impedit fugiat labore, omnis quis temporibus consequuntur accusantium totam, voluptas ipsa assumenda consequatur ut! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Corporis dolore fugit mollitia saepe qui doloribus! Asperiores ut vero veritatis deleniti nisi eveniet laborum! Rem dolorum velit consequuntur doloremque mollitia ea?</p>
+<p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ducimus, dolore. Cumque, dolores! Assumenda dicta cumque explicabo eligendi debitis officia molestiae accusantium dignissimos enim voluptatum at illo fugiat reprehenderit, incidunt consequatur?Lorem ipsum dolor sit, amet consectetur adipisicing elit. Natus accusamus laborum corrupti et quia porro laboriosam beatae voluptatibus sit quas, earum accusantium, eligendi doloremque, vel mollitia velit dolore molestiae itaque.lorem Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus enim dignissimos cumque, et quidem error doloribus impedit fugiat labore, omnis quis temporibus consequuntur accusantium totam, voluptas ipsa assumenda consequatur ut! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Corporis dolore fugit mollitia saepe qui doloribus! Asperiores ut vero veritatis deleniti nisi eveniet laborum! Rem dolorum velit consequuntur doloremque mollitia ea?</p>
+<var><p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ducimus, dolore. Cumque, dolores! Assumenda dicta cumque explicabo eligendi debitis officia molestiae accusantium dignissimos enim voluptatum at illo fugiat reprehenderit, incidunt consequatur?Lorem ipsum dolor sit, amet consectetur adipisicing elit. Natus accusamus laborum corrupti et quia porro laboriosam beatae voluptatibus sit quas, earum accusantium, eligendi doloremque, vel mollitia velit dolore molestiae itaque.lorem Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus enim dignissimos cumque, et quidem error doloribus impedit fugiat labore, omnis quis temporibus consequuntur accusantium totam, voluptas ipsa assumenda consequatur ut! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Corporis dolore fugit mollitia saepe qui doloribus! Asperiores ut vero veritatis deleniti nisi eveniet laborum! Rem dolorum velit consequuntur doloremque mollitia ea?</p></var>
+<p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ducimus, dolore. Cumque, dolores! Assumenda dicta cumque explicabo eligendi debitis officia molestiae accusantium dignissimos enim voluptatum at illo fugiat reprehenderit, incidunt consequatur?Lorem ipsum dolor sit, amet consectetur adipisicing elit. Natus accusamus laborum corrupti et quia porro laboriosam beatae voluptatibus sit quas, earum accusantium, eligendi doloremque, vel mollitia velit dolore molestiae itaque.lorem Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus enim dignissimos cumque, et quidem error doloribus impedit fugiat labore, omnis quis temporibus consequuntur accusantium totam, voluptas ipsa assumenda consequatur ut! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Corporis dolore fugit mollitia saepe qui doloribus! Asperiores ut vero veritatis deleniti nisi eveniet laborum! Rem dolorum velit consequuntur doloremque mollitia ea?</p>
+<p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ducimus, dolore. Cumque, dolores! Assumenda dicta cumque explicabo eligendi debitis officia molestiae accusantium dignissimos enim voluptatum at illo fugiat reprehenderit, incidunt consequatur?Lorem ipsum dolor sit, amet consectetur adipisicing elit. Natus accusamus laborum corrupti et quia porro laboriosam beatae voluptatibus sit quas, earum accusantium, eligendi doloremque, vel mollitia velit dolore molestiae itaque.lorem Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus enim dignissimos cumque, et quidem error doloribus impedit fugiat labore, omnis quis temporibus consequuntur accusantium totam, voluptas ipsa assumenda consequatur ut! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Corporis dolore fugit mollitia saepe qui doloribus! Asperiores ut vero veritatis deleniti nisi eveniet laborum! Rem dolorum velit consequuntur doloremque mollitia ea?</p>
+<p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ducimus, dolore. Cumque, dolores! Assumenda dicta cumque explicabo eligendi debitis officia molestiae accusantium dignissimos enim voluptatum at illo fugiat reprehenderit, incidunt consequatur?Lorem ipsum dolor sit, amet consectetur adipisicing elit. Natus accusamus laborum corrupti et quia porro laboriosam beatae voluptatibus sit quas, earum accusantium, eligendi doloremque, vel mollitia velit dolore molestiae itaque.lorem Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus enim dignissimos cumque, et quidem error doloribus impedit fugiat labore, omnis quis temporibus consequuntur accusantium totam, voluptas ipsa assumenda consequatur ut! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Corporis dolore fugit mollitia saepe qui doloribus! Asperiores ut vero veritatis deleniti nisi eveniet laborum! Rem dolorum velit consequuntur doloremque mollitia ea?</p>
+<p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ducimus, dolore. Cumque, dolores! Assumenda dicta cumque explicabo eligendi debitis officia molestiae accusantium dignissimos enim voluptatum at illo fugiat reprehenderit, incidunt consequatur?Lorem ipsum dolor sit, amet consectetur adipisicing elit. Natus accusamus laborum corrupti et quia porro laboriosam beatae voluptatibus sit quas, earum accusantium, eligendi doloremque, vel mollitia velit dolore molestiae itaque.lorem Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus enim dignissimos cumque, et quidem error doloribus impedit fugiat labore, omnis quis temporibus consequuntur accusantium totam, voluptas ipsa assumenda consequatur ut! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Corporis dolore fugit mollitia saepe qui doloribus! Asperiores ut vero veritatis deleniti nisi eveniet laborum! Rem dolorum velit consequuntur doloremque mollitia ea?</p>
     
 </body>
 </html>
